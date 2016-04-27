@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<!--
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+-->
+
+<html>
+<head>
+<!-- a. -->
+<link rel="stylesheet" href="css/main.css">
+<title>Sporclone: US Women's National Team 2015 World Cup Roster</title>
+
+<!-- b. -->
+
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+}
+tr {
+}
+th {
+}
+td {
+}
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+</style>
+
+<script>
+/*********** Game configuration ***********/
+// c.
+var answers = ["Shannon Boxx|Boxx", "Morgan Brian|Brian", "Lori Chalupny|Chalupny", "Whitney Engen|Engen", "Ashlyn Harris|Harris", "Tobin Heath|Heath", "Lauren Holiday|Holiday", "Julie Johnston|Johnston", "Meghan Klingenberg|Klingenberg", "Ali Krieger|Krieger", "Sydney Leroux|Leroux", "Carli Lloyd|Lloyd", "Alex Morgan|Morgan", "Alyssa Naeher|Naeher", "Kelley O'Hara|O'Hara", "Heather O'Reilly|O'Reilly", "Christen Press|Press", "Christie Rampone|Rampone", "Megan Rapinoe|Rapinoe", "Amy Rodriguez|Rodriguez", "Becky Sauerbrunn|Sauerbrunn", "Hope Solo|Solo", "Abby Wambach|Wambach"];
+// d.
+var time_limit = 150; // in seconds
+</script>
+
+</head>
+
+
+<!-- e. -->
+<body onload="setup()">
+
+<header>
+    <h1>Sporclone</h1>
+</header>
+
+<div class="frame">
+
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- f. -->
+            <li><a href="top10songs.html">Top Ten Songs of 2015</a></li>
+            <li><a href="disneycharacters.html">Disney Characters</a></li>
+            </ul>
+        </aside>
+
+        <!-- g. -->
+        <img class="icon" src="img/uslogo.png">
+
+        <!-- h. -->
+        <h2>Name the players on the US Women's National Team 2015 World Cup Roster:</h2>
+
+    </section>
+
+    <section>
+
+        <div class="column">
+            <!-- i. -->
+            <input id="start" type="button" onclick="start()" value="PLAY GAME">
+        </div>
+
+        <div class="column">
+            <!-- j. -->
+            <h3>Enter player name:</h3>
+
+            <!-- k.  -->
+            <body onkeyup="check()">
+            <input id="guess" type="text">
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time"></span>
+        </div>
+
+    </section>
+
+    <section>
+
+        <!-- l. -->
+        <table>
+        <tr>
+        <td><span id="answer0"></span></td>
+        <td><span id="answer1"></span></td>
+        <td><span id="answer2"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer3"></span></td>
+        <td><span id="answer4"></span></td>
+        <td><span id="answer5"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer6"></span></td>
+        <td><span id="answer7"></span></td>
+        <td><span id="answer8"></span></td>
+        </tr>
+<tr>
+        <td><span id="answer9"></span></td>
+        <td><span id="answer10"></span></td>
+        <td><span id="answer11"></span></td>
+        </tr>
+<tr>
+        <td><span id="answer12"></span></td>
+        <td><span id="answer13"></span></td>
+        <td><span id="answer14"></span></td>
+        </tr>
+<tr>
+        <td><span id="answer15"></span></td>
+        <td><span id="answer16"></span></td>
+        <td><span id="answer17"></span></td>
+        </tr>
+<tr>
+        <td><span id="answer18"></span></td>
+        <td><span id="answer19"></span></td>
+        <td><span id="answer20"></span></td>
+        </tr>
+<tr>
+        <td><span id="answer21"></span></td>
+        <td><span id="answer22"></span></td>
+        </tr>
+        </table>
+
+    </section>
+
+    <footer>
+
+        <!-- m. -->
+        <p>Quiz by Marcella B.</p>
+
+    </footer>
+
+</div>
+
+<!-- n. -->
+<script src="js/sporclone.js"></script>
+
+</body>
+</html>
